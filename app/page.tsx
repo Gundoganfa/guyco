@@ -8,6 +8,7 @@ import FeaturesSection from '@/components/FeaturesSection'
 import MovementSection from '@/components/MovementSection'
 import CTASection from '@/components/CTASection'
 import Footer from '@/components/Footer'
+import CountdownTimer from '@/components/CountdownTimer'
 
 export default function Home() {
   useEffect(() => {
@@ -38,6 +39,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-slate-900 text-white overflow-x-hidden">
       <Navbar />
+      <CountdownTimer />
       
       {/* Hero Section */}
       <section id="hero">
