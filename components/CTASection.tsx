@@ -41,7 +41,8 @@ export default function CTASection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="space-y-4 sm:space-y-0 sm:space-x-6 sm:flex sm:justify-center mb-12"
           >
-            <motion.button
+            <motion.a
+              href="mailto:info@goycoin.com?subject=I want to buy GOY COIN!"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-gradient-goy text-black font-bold py-4 px-8 rounded-full text-lg hover:shadow-2xl hover:shadow-amber-400/50 transform transition-all duration-300 w-full sm:w-auto flex items-center justify-center space-x-2"
@@ -49,15 +50,16 @@ export default function CTASection() {
               <Rocket className="w-5 h-5" />
               <span>Buy GOY Now</span>
               <ExternalLink className="w-4 h-4" />
-            </motion.button>
-            <motion.button
+            </motion.a>
+            <motion.a
+              href="#movement"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="border-2 border-amber-400 text-amber-400 font-bold py-4 px-8 rounded-full text-lg hover:bg-amber-400 hover:text-black transform transition-all duration-300 w-full sm:w-auto flex items-center justify-center space-x-2"
             >
               <Users className="w-5 h-5" />
               <span>Join Community</span>
-            </motion.button>
+            </motion.a>
           </motion.div>
 
           {/* Quick Stats */}

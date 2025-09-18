@@ -85,12 +85,18 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 1.1 }}
           className="space-y-4 sm:space-y-0 sm:space-x-6 sm:flex sm:justify-center"
         >
-          <button className="bg-gradient-goy text-black font-bold py-4 px-8 rounded-full text-lg hover:scale-105 transform transition-all duration-300 shadow-2xl hover:shadow-amber-400/50 w-full sm:w-auto">
+          <a 
+            href="#community"
+            className="bg-gradient-goy text-black font-bold py-4 px-8 rounded-full text-lg hover:scale-105 transform transition-all duration-300 shadow-2xl hover:shadow-amber-400/50 w-full sm:w-auto inline-block text-center"
+          >
             🚀 Join the Movement
-          </button>
-          <button className="border-2 border-amber-400 text-amber-400 font-bold py-4 px-8 rounded-full text-lg hover:bg-amber-400 hover:text-black transform transition-all duration-300 w-full sm:w-auto">
+          </a>
+          <a 
+            href="#story"
+            className="border-2 border-amber-400 text-amber-400 font-bold py-4 px-8 rounded-full text-lg hover:bg-amber-400 hover:text-black transform transition-all duration-300 w-full sm:w-auto inline-block text-center"
+          >
             📖 Read the Story
-          </button>
+          </a>
         </motion.div>
         
         <motion.div

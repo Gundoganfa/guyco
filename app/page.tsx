@@ -69,9 +69,12 @@ export default function Home() {
 
       {/* Floating Action Button */}
       <div className="fixed bottom-6 right-6 z-40">
-        <button className="bg-gradient-goy text-black font-bold py-3 px-6 rounded-full shadow-2xl hover:shadow-amber-400/50 transition-all duration-300 hover:scale-105 animate-bounce-slow">
+        <a 
+          href="#community"
+          className="bg-gradient-goy text-black font-bold py-3 px-6 rounded-full shadow-2xl hover:shadow-amber-400/50 transition-all duration-300 hover:scale-105 animate-bounce-slow inline-block"
+        >
           🚀 Buy GOY
-        </button>
+        </a>
       </div>
     </main>
   )

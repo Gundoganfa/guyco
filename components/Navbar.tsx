@@ -67,14 +67,15 @@ export default function Navbar() {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-400 group-hover:w-full transition-all duration-300"></span>
               </motion.a>
             ))}
-            <motion.button
+            <motion.a
+              href="#community"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-gradient-goy text-black font-bold py-2 px-6 rounded-full hover:shadow-lg hover:shadow-amber-400/50 transition-all duration-300 flex items-center space-x-2"
             >
               <span>Buy GOY</span>
               <ExternalLink className="w-4 h-4" />
-            </motion.button>
+            </motion.a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -113,7 +114,8 @@ export default function Navbar() {
                 {item.name}
               </motion.a>
             ))}
-            <motion.button
+            <motion.a
+              href="#community"
               initial={{ opacity: 0, x: -20 }}
               animate={isOpen ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
               transition={{ duration: 0.3, delay: navItems.length * 0.1 }}
@@ -122,7 +124,7 @@ export default function Navbar() {
             >
               <span>Buy GOY</span>
               <ExternalLink className="w-4 h-4" />
-            </motion.button>
+            </motion.a>
           </div>
         </motion.div>
       </div>
