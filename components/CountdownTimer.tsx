@@ -59,17 +59,17 @@ export default function CountdownTimer() {
       </div>
 
       {/* Countdown Display */}
-      <div className="grid grid-cols-4 gap-2">
+      <div className="grid grid-cols-2 gap-3">
         {/* Days */}
         <motion.div
           key={timeLeft.days}
           initial={{ scale: 1.2 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.3 }}
-          className="bg-black/20 rounded-lg p-1.5 md:p-2 text-center"
+          className="bg-black/20 rounded-lg p-2 md:p-3 text-center"
         >
-          <div className="text-lg md:text-xl font-black text-black">{timeLeft.days.toString().padStart(2, '0')}</div>
-          <div className="text-[10px] md:text-xs font-medium text-black/80">DAYS</div>
+          <div className="text-2xl md:text-3xl font-black text-black">{timeLeft.days.toString().padStart(2, '0')}</div>
+          <div className="text-xs md:text-sm font-medium text-black/80">DAYS</div>
         </motion.div>
 
         {/* Hours */}
@@ -78,35 +78,18 @@ export default function CountdownTimer() {
           initial={{ scale: 1.2 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.3 }}
-          className="bg-black/20 rounded-lg p-1.5 md:p-2 text-center"
+          className="bg-black/20 rounded-lg p-2 md:p-3 text-center"
         >
-          <div className="text-lg md:text-xl font-black text-black">{timeLeft.hours.toString().padStart(2, '0')}</div>
-          <div className="text-[10px] md:text-xs font-medium text-black/80">HRS</div>
+          <div className="text-2xl md:text-3xl font-black text-black">{timeLeft.hours.toString().padStart(2, '0')}</div>
+          <div className="text-xs md:text-sm font-medium text-black/80">HOURS</div>
         </motion.div>
+      </div>
 
-        {/* Minutes */}
-        <motion.div
-          key={timeLeft.minutes}
-          initial={{ scale: 1.2 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 0.3 }}
-          className="bg-black/20 rounded-lg p-1.5 md:p-2 text-center"
-        >
-          <div className="text-lg md:text-xl font-black text-black">{timeLeft.minutes.toString().padStart(2, '0')}</div>
-          <div className="text-[10px] md:text-xs font-medium text-black/80">MIN</div>
-        </motion.div>
-
-        {/* Seconds */}
-        <motion.div
-          key={timeLeft.seconds}
-          initial={{ scale: 1.2 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 0.3 }}
-          className="bg-black/20 rounded-lg p-1.5 md:p-2 text-center"
-        >
-          <div className="text-lg md:text-xl font-black text-black">{timeLeft.seconds.toString().padStart(2, '0')}</div>
-          <div className="text-[10px] md:text-xs font-medium text-black/80">SEC</div>
-        </motion.div>
+      {/* Time Detail */}
+      <div className="text-center mt-2">
+        <div className="text-black/70 text-xs font-medium">
+          {timeLeft.minutes.toString().padStart(2, '0')}:{timeLeft.seconds.toString().padStart(2, '0')} remaining
+        </div>
       </div>
 
       {/* Bottom Text */}
